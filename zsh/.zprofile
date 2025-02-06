@@ -38,11 +38,6 @@ alias gl='git log --graph --abbrev-commit --decorate \
 alias gundo="git reset --soft HEAD~1"  # Undo last commit (keep changes)
 alias gb="git for-each-ref --sort=-committerdate --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:green)%(committerdate:relative)%(color:reset)' refs/heads/"  # List branches sorted by last commit date
 
-# 📌 Useful Git Functions
-gsw() { git switch $(git branch --sort=-committerdate | fzf); }  # Fuzzy switch branches
-gcd() { cd $(find ~/ -name ".git" | sed 's|/.git||' | fzf); }  # Fuzzy navigate to Git project
-gsearch() { git log --oneline --all | fzf | awk '{print $1}'; }  # Fuzzy search commits
-
 # 📌 Flutter Aliases
 alias ftest="flutter test -r github"  # Run tests
 alias fgen="dart run build_runner build --delete-conflicting-outputs"  # Generate JSON serialization files
