@@ -96,4 +96,4 @@ upd8() {
 }
 
 export -f upd8
-
+clear
