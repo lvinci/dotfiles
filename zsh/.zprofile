@@ -15,4 +15,4 @@ fi
 
 # Add Flutter to PATH (works for both macOS and Linux)
 export PATH="$PATH:$HOME/tools/flutter/bin"
-
+export PATH="$PATH:$HOME/.pub-cache/bin"
